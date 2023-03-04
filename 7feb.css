@@ -1,0 +1,149 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #181616;
+}
+header nav span{
+    color: #fff;
+    font-size: 25px;
+    visibility: hidden;
+}
+header nav{
+    padding: 5px;
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul{
+    list-style: none;
+    margin-right: 30px;
+}
+header nav ul li{
+    display: flex;
+    gap: 15px;
+}
+header nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+main .left_section img{
+    height: 50px;
+    width: 50px;
+}
+main .left_section h2{
+    color: #fff;
+}
+main .left_section h1{
+    color: #fff;
+    font-size: 65px;
+}
+main .left_section h3{
+    color: #41e241;
+    font-size: 50px;
+}
+main .right_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+main .right_section img{
+    height: 380px;
+    width: 440px;
+}
+.heading{
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.heading h3{
+    color: #fff;
+    padding: 5px 12px 5px 12px;
+    border-bottom: 2px solid #000fff;
+    
+}
+
+.logo {
+    display:flex ;
+    padding: 20px;
+    width: 600px;
+    justify-content: center;
+    margin: auto;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.logo img{
+    height: 200px;
+    width: 200px;
+}
+.logos{
+    display: flex;
+    width: 400px;
+    padding: 8px;
+    margin: auto;
+    justify-content: center;
+    gap: 15px;
+}
+
+.logos img{
+    height: 30px;
+    width: 30px;
+}
+
+@media screen and (max-width:600px){
+    header nav ul{
+        visibility: hidden;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    main .left_section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .logo{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    header nav span{
+        visibility: visible;
+    }
+
+    main .left_section h1{
+        font-size: 50px;
+    }
+
+    main .left_section h3{
+        font-size: 30px;
+    }
+
+    main .right_section img{
+        height: 300px;
+        width:300px ;
+    }
+}
+
+
